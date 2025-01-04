@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Dara",
+      "place": "Phnom Penh",
+      "phone": "17123456"
+    },
+    {
+      "id": "2",
+      "name": "Sopheap",
+      "place": "Siem Reap",
+      "phone": "012345678"
+    },
+    {
+      "id": "3",
+      "name": "Vathana",
+      "place": "Battambang",
+      "phone": "098765432"
+    },
+    {
+      "id": "100",
+      "name": "Hong",
+      "place": "Thailand",
+      "phone": "234567"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Container for the entire form */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #4A4A4A;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4A4A4A;
+    text-transform: uppercase;
+}
+
+/* Input field styling */
+form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+    background-color: #fff;
+}
+
+/* Error message styling */
+.errorMsg {
+    color: #d9534f; /* Bootstrap danger color */
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 5px 0 15px 0;
+    display: block; /* Ensure the error message appears on its own line */
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.errorMsg::before {
+    content: "⚠️"; /* Unicode for warning symbol */
+    margin-right: 5px; /* Adds space between the icon and text */
+}
+
+/* Button container */
+form div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* General button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 25px; /* Increased size */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Save Button */
+.btn-save {
+    background-color: #6c63ff;
+}
+
+.btn-save:hover {
+    background-color: #5848d9;
+}
+
+/* Back Button */
+.btn-back {
+    background-color: #dc3545;
+    text-align: center;
+}
+
+.btn-back:hover {
+    background-color: #bd2130;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    form div {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%; /* Full-width buttons for small screens */
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
+
